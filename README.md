@@ -11,3 +11,33 @@ All Cars for sell
 
 Create Page for Selling a Car...
 ![68747470733a2f2f692e696d6775722e636f6d2f71656d6e416f6c2e706e67](https://github.com/shitallog/Car_Reselling_Website/assets/134849794/c0befde9-7e6a-4353-bd45-0a4ebee62832)
+Installation process
+Clone the repo.
+git clone https://github.com/vikas-ukani/Car-Reselling.git
+cd Car-Reselling
+Create .env file
+cp .env.example .env
+Install pacakges.
+Install php laravel pacakges
+composer install 
+Configure local database connection.
+Generate key if it's required, Run the command
+php artisan key:generate
+Database setup
+Find the exported database backup on database directory and import on local system.
+
+Path database/car-reselling.sql
+
+OR run the migrations, for fresh database setup. php artisan migrate
+
+Seed the dummy data.
+After done setup with, Run the below command to insert dummy data to database
+php artisan db:seed
+Run the PHP server
+php artisan serve
+Run Vue server
+npm run dev
+Run the test for routes.
+php artisan test
+Visit the site.
+http://localhost:8000/
